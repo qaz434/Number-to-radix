@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 #include <string.h>
 /*
 *This function removes spaces in a string
@@ -46,10 +46,7 @@ int evaluate(int res, int val, char *str){
         else if (opr == '/'){
             res /= val;
         }
-        else{
-            printf("Cannot evaluate\n");fflush(stdout);
-            str[i]='\0';
-        }
+
     }
    return res;
 }
@@ -109,7 +106,7 @@ int main()
     char str[80];
     int val=0,res,radix;
     //user inputs expression
-    printf("Enter a number: ");fflush(stdout);
+    printf("Enter an expression ");fflush(stdout);
      scanf("%[^\n]", str); 
      //calls function to remove spaces in the string
      removeSpaces(str);
