@@ -1,10 +1,3 @@
-/*
-ICSI 333. System Fundamentals
-Spring 2022
-Omkar Kulkarni
-Jean Shin
-001481777
-*/
 #include <stdio.h>
 #include <stdlib.h> 
 #include <string.h>
@@ -116,7 +109,7 @@ int main()
     char str[80];
     int val=0,res,radix;
     //user inputs expression
-    printf("Enter an expression ");fflush(stdout);
+    printf("Enter a number: ");fflush(stdout);
      scanf("%[^\n]", str); 
      //calls function to remove spaces in the string
      removeSpaces(str);
